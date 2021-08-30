@@ -1,0 +1,70 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "import",
+    "prettier"
+  ],
+  "rules": {
+    "no-console": "off",
+    "no-sequences": "off",
+    "no-restricted-globals": "off",
+    "no-param-reassign": [ "error", { "props": false } ],
+    "no-underscore-dangle": [ "warn", { "allow": [ "_id", "_rev", "_path" ] } ],
+    "no-unused-vars": [ "warn", { "vars": "local", "args": "none" } ],
+    "no-unused-expressions": [ "error", { "allowTernary": true } ],
+    "no-plusplus": [ "error", { "allowForLoopAfterthoughts": true } ],
+    "no-duplicate-imports": 0,
+    "handle-callback-err": "error",
+    "prefer-promise-reject-errors": "off",
+    "valid-jsdoc": [
+      "error",
+      {
+        "prefer": {
+          "arg": "param",
+          "return": " returns"
+        },
+        "requireReturnType": false,
+        "requireReturn": false
+      }
+    ],
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "**/*.spec.js",
+          "**/*.config.js",
+          "**/test/**/*.js",
+          "./webpack.*.js",
+          "./conf/webpack/**/*.js"
+        ]
+      }
+    ],
+    "import/no-extraneous-dependencies": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+
+    "class-methods-use-this": "off",
+    "prefer-destructuring": ["error", {"object": true, "array": false}],
+    "prettier/prettier": [
+      "error", {
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": false,
+        "trailingComma": "es5",
+        "printWidth": 120,
+        "comma-dangle": "always"
+      }
+    ]
+  }
+}
