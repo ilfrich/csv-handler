@@ -1,5 +1,5 @@
 {
-  "name": "@ilfrich/react-csv-handler",
+  "name": "react-csv-handler",
   "version": "0.0.1",
   "description": "React components to select a CSV file and visualise it's content",
   "scripts": {

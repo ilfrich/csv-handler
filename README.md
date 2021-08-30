@@ -23,7 +23,7 @@ If you just want to parse CSV, you can use the [`CsvHandler`](#csvhandler) objec
 ## Installation
 
 ```bash
-npm i -S @ilfrich/csv-handler
+npm i -S react-csv-handler
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ npm i -S @ilfrich/csv-handler
 
 ```javascript
 import React from "react"
-import { CsvForm } from "@ilfrich/csv-handler"
+import { CsvForm } from "react-csv-handler"
 
 const MyComponent = props => (
     <div>
@@ -43,7 +43,7 @@ const MyComponent = props => (
 
 ```javascript
 import React from "react"
-import { CsvHandler } from "@ilfrich/csv-handler"
+import { CsvHandler } from "react-csv-handler"
 
 const MyComponent = props => {
 
